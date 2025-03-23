@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: 25%; margin-right: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%; min-height: 25vh;
+}
+
+.diddy-link {
+    text-decoration: none;
+    color: white;
+}
+
+.diddy-link:hover {
+    text-decoration: underline;
+    color: lightgray;
+}
+
+.martin-link {
+    text-decoration: none;
+    color: black;
+}
+
+.martin-link:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+.fortnite-link {
+    text-decoration: none;
+    color: white;
+}
+
+.fortnite-link:hover {
+    text-decoration: underline;
+    color: lightgray;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+.author-link {
+    text-decoration: none;
+    color: black;
+}
+
+.author-link:hover {
+    text-decoration: underline;
+    color: gray;
+}
+
+.test1 {
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 45%;
+    margin-right: 5%;
+}
+
+.test1-caption {
+    overflow: auto;
+    clip-path: inset(0px round 20px);
+    padding: 22px;
+    background-color: rgba(0, 0, 0, 0.842);
+    color: white;
+    font-size: 18.8px;
+    height: 160px;
+}
+
+.test1-caption-2 {
+    align-self: flex-end;
+    padding-top: 45px;
+}
+
+.diddy-profile {
+    display: flex;
+    position: relative;
+}
+
+.diddy-profile::before {
+    position: absolute;
+    content: "";
+    left: 47px;
+    width: 0; height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid black;
+}
+
+.diddy-pic {
+    margin-left: 20px; margin-top: 18px;
+    width: 90px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.diddy-info {
+    padding-top: 38px;
+}
+
+.diddy-name {
+    padding-left: 15px;
+    font-size: 28px;
+}
+
+.diddy-title {
+    padding-left: 15px; padding-top: 3px;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.test2 {
+    margin-top: 20px; margin-left: 5%; margin-right: 20px;
+    width: 45%;
+    border-style: solid;
+    border-radius: 30px;
+}
+
+.test2-caption {
+    overflow: auto;
+    padding: 22px; padding-bottom: 0px;
+    font-size: 20px;
+    height: 45%;
+    border-radius: 20px;
+}
+
+.martin-profile {
+    display: flex;
+    padding-top: 20px;
+}
+
+.martin-info {
+    padding-top: 38px;
+    align-self: flex-end;
+}
+
+.martin-name {
+    padding-left: 15px;
+    font-size: 28px;
+}
+
+.martin-title {
+    padding-left: 15px; padding-bottom: 30px;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.martin-pic {
+    margin-left: 20px; margin-top: 18px;
+    width: 90px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.mid {
+    display: flex;
+    max-height: 35vh;
+    margin-top: 50px; margin-bottom: 40px; margin-left: 20px; margin-right: 20px;
+}
+
+.fortnite-pic {
+    width: 35%;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.test3-text {
+    width: 65%;
+    margin-left: 20px;
+    background-color: rgba(0, 0, 0, 0.842);
+    border-radius: 20px;
+}
+
+.test3-cap {
+    margin-top: 30px; margin-bottom: 30px; margin-left: 35px; margin-right: 35px;
+    height: 90%;
+    overflow: auto;
+}
+
+.stars {
+    height: 10px; width: 10px;
+    font-size: 45px;
+    color: gold;
+    padding-bottom: 65px; padding-top: 40px;
+}
+
+.fortnite-name {
+    font-size: 30px;
+    color: white;
+}
+
+.fortnite-title {
+    padding-bottom: 30px; padding-top: 15px;
+    font-style: italic;
+    font-size: 20px;
+    color: lightgray;
+}
+
+.test3-cap-text {
+    color: white;
+    font-size: 32px;
+}
+
+.footer {
+    margin-left: 20px; margin-right: 20px; margin-bottom: 20px;
+    min-height: 25vh;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.footer-text {
+    margin-top: 40px; margin-left: 125px; margin-right: 125px; margin-bottom: 25px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.profile-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.profile-small {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    opacity: 0.4;
+}
+
+.profile-large {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+}
+
+.button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding-top: 28px;
+}
+
+.animal {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.author {
+    margin-top: 18px; margin-bottom: 12px;
+    font-size: 12px;
+}

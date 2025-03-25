@@ -1,0 +1,151 @@
+/* AUTHOR: @WALSHYAW */
+/* DATE: 03/25/2025 */
+/* ROADMAP PROJECT: FRONTEND: ACCESSIBLE FORM UI */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container {
+    display: flex;
+    border-style: solid; border-radius: 14px;
+    height: 50%; width: 60%;
+}
+
+    .form-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 45%; height: 100%;
+        margin-left: 50px;  margin-top: 55px; margin-bottom: 55px; margin-right: 55px;
+    }
+
+        .name-container {
+            display: flex;
+            flex-direction: column;
+            height: 105px;
+        }
+
+            .fullname, .email, .password, .password-confirm {
+                font-size: 24px;
+                padding-bottom: 5px;
+            }
+
+            .fullname-input {
+                color: lightgray;
+                font-size: 24px;
+                width: 100%;
+                border-style: solid; border-radius: 10px; border-color: black;
+                padding-left: 10px; padding-top: 8px; padding-bottom: 8px;
+            }
+
+        .email-container {
+            display: flex;
+            flex-direction: column;
+            height: 145px;
+        }
+
+            .email-input {
+                color: red;
+                font-size: 24px;
+                width: 100%;
+                border-style: solid; border-radius: 10px; border-color: red;
+                padding-left: 10px; padding-top: 8px; padding-bottom: 8px;
+            }
+
+            .email-error {
+                color: red;
+                padding-top: 12px; padding-left: 5px;
+            }
+
+        .password-container {
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+        }
+
+            .password-input {
+                display: flex;
+                align-items: center;
+                position: relative;
+                width: 100%;
+            }
+
+            .password-input-text {
+                position: relative;
+                color: lightgray;
+                font-size: 24px;
+                width: 100%;
+                border-style: solid; border-radius: 10px; border-color: black;
+                padding-left: 10px; padding-top: 8px; padding-bottom: 8px;
+                margin-bottom: 24px;
+            }
+
+            .password-input-visible {
+                position: absolute;
+                right: 10px; top: 9%;
+                height: 36px; width: 36px;
+                cursor: pointer;
+            }
+
+        .profile-button {
+            background-color: black;
+            color: white;
+            border: none; border-radius: 10px;
+            margin-top: 24px;
+            height: 60px; width: 95%;
+            font-size: 24px;
+        }
+
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+
+        .completeness-container {
+            margin-top: 55px;
+            height: 40%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+            .complete-bar-text {
+                font-size: 32px;
+            }
+
+            .completeness-text {
+                font-size: 24px;
+                text-align: center;
+            }
+
+        .checklist-container {
+            height: 100%;
+            margin-top: 24px; margin-bottom: 44px; margin-right: 20px; margin-left: 20px;
+            padding-top: 10px;
+            background-color: lightgray; border-radius: 12px;
+        }
+
+            .completed-text {
+                color: rgb(87, 85, 85);
+                text-align: center; text-decoration: line-through; text-decoration-color: rgb(87, 85, 85);
+                padding-top: 8px; padding-bottom: 8px;
+                font-size: 18px;
+            }
+
+            .incomplete-text {
+                text-align: center;
+                padding-top: 8px; padding-bottom: 8px;
+                font-size: 18px;
+            }

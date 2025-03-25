@@ -1,0 +1,62 @@
+<!-- AUTHOR: @WALSHYAW -->
+<!-- DATE: 03/25/2025 -->
+<!-- ROADMAP PROJECT: FRONTEND: ACCESSIBLE FORM UI  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Accessible Form UI</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="form-input">
+        <div class="name-container">
+          <p class="fullname">Full Name</p>
+          <input class="fullname-input" value="What should we call you?"></input>
+        </div>
+        <div class="email-container">
+          <p class="email">Email</p>
+          <input class="email-input" value="john@doe.com"></input>
+          <p class="email-error">Email is already taken</p>
+        </div>
+        <div class="password-container">
+          <p class="password">Enter Password</p>
+          <div class="password-input">
+            <input class="password-input-text" value="xxxxxxxx"></input>
+            <img class="password-input-visible" 
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F000%2F576%2F988%2Foriginal%2Feye-icon-vector-illustration.jpg&f=1&nofb=1&ipt=6bb2bbf7ba2572e90617e53e1f19055b56592ad853ecc8d79e02a4aca9f98ed9&ipo=images"
+            alt="Eye icon">
+          </div>
+          <p class="password-confirm">Confirm Password</p>
+          <div class="password-input">
+            <input class="password-input-text" value="xxxxxxxx"></input>
+            <img class="password-input-visible" 
+            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F000%2F576%2F988%2Foriginal%2Feye-icon-vector-illustration.jpg&f=1&nofb=1&ipt=6bb2bbf7ba2572e90617e53e1f19055b56592ad853ecc8d79e02a4aca9f98ed9&ipo=images"
+            alt="Eye icon">
+          </div>
+        </div>
+        <button class="profile-button">Update Profile</button>
+      </div>
+      <div class="profile-container">
+        <div class="completeness-container">
+            <svg height="180" width="150" >
+            <circle class="progress-bar" r="73" cx="75" cy="75" fill="none" stroke="gray" stroke-width="3"/>
+            <circle class="complete-bar"  transform="rotate(50, 75, 75)" r="71.5" cx="75" cy="75" fill="none" stroke="black" stroke-width="5.5" stroke-dasharray="297"/>
+            <text class="complete-bar-text" x="75" y="85" text-anchor="middle" alignment-baseline="middle">65%</text>
+        </svg>
+        </div>
+        <p class="completeness-text">Profile Completeness</p>
+        <div class="checklist-container">
+            <p class="completed-text">Create Account</p>
+            <p class="completed-text">Update Roadmap Progress</p>
+            <p class="completed-text">Setup Public Profile</p>
+            <p class="incomplete-text">Complete your first project</p>
+            <p class="incomplete-text">Invite your Friends</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

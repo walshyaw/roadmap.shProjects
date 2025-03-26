@@ -23,32 +23,32 @@ body {
     width: 100%; min-height: 25vh;
 }
 
-.diddy-link {
+.squirrel-link {
     text-decoration: none;
     color: white;
 }
 
-.diddy-link:hover {
+.squirrel-link:hover {
     text-decoration: underline;
     color: lightgray;
 }
 
-.martin-link {
+.cat-link {
     text-decoration: none;
     color: black;
 }
 
-.martin-link:hover {
+.cat-link:hover {
     text-decoration: underline;
     color: gray;
 }
 
-.fortnite-link {
+.tiger-link {
     text-decoration: none;
     color: white;
 }
 
-.fortnite-link:hover {
+.tiger-link:hover {
     text-decoration: underline;
     color: lightgray;
 }
@@ -95,12 +95,12 @@ body {
     padding-top: 45px;
 }
 
-.diddy-profile {
+.squirrel-profile {
     display: flex;
     position: relative;
 }
 
-.diddy-profile::before {
+.squirrel-profile::before {
     position: absolute;
     content: "";
     left: 47px;
@@ -110,23 +110,23 @@ body {
     border-top: 15px solid black;
 }
 
-.diddy-pic {
+.squirrel-pic {
     margin-left: 20px; margin-top: 18px;
     width: 90px;
     height: 80px;
     border-radius: 50%;
 }
 
-.diddy-info {
+.squirrel-info {
     padding-top: 38px;
 }
 
-.diddy-name {
+.squirrel-name {
     padding-left: 15px;
     font-size: 28px;
 }
 
-.diddy-title {
+.squirrel-title {
     padding-left: 15px; padding-top: 3px;
     font-style: italic;
     font-size: 1rem;
@@ -147,28 +147,28 @@ body {
     border-radius: 20px;
 }
 
-.martin-profile {
+.cat-profile {
     display: flex;
     padding-top: 20px;
 }
 
-.martin-info {
+.cat-info {
     padding-top: 38px;
     align-self: flex-end;
 }
 
-.martin-name {
+.cat-name {
     padding-left: 15px;
     font-size: 28px;
 }
 
-.martin-title {
+.cat-title {
     padding-left: 15px; padding-bottom: 30px;
     font-style: italic;
     font-size: 1rem;
 }
 
-.martin-pic {
+.cat-pic {
     margin-left: 20px; margin-top: 18px;
     width: 90px;
     height: 80px;
@@ -181,7 +181,7 @@ body {
     margin-top: 50px; margin-bottom: 40px; margin-left: 20px; margin-right: 20px;
 }
 
-.fortnite-pic {
+.tiger-pic {
     width: 35%;
     border-radius: 30px;
     border-style: solid;
@@ -208,12 +208,12 @@ body {
     padding-bottom: 65px; padding-top: 40px;
 }
 
-.fortnite-name {
+.tiger-name {
     font-size: 30px;
     color: white;
 }
 
-.fortnite-title {
+.tiger-title {
     padding-bottom: 30px; padding-top: 15px;
     font-style: italic;
     font-size: 20px;

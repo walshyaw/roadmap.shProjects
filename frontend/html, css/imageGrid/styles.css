@@ -1,0 +1,42 @@
+/* AUTHOR: @WALSHYAW */
+/* DATE: 03/27/2025 */
+/* ROADMAP PROJECT: FRONTEND: IMAGE GRID LAYOUT */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "red-panda raccoon zebra"
+    "red-panda tiger zebra"
+    "fox tiger lion";
+    height: 90dvh;
+    width: 70dvw;
+    gap: 7px;
+    padding: 1rem;
+}
+
+img {
+    height: 100%; width: 100%;
+    object-fit: cover;
+}
+
+.red-panda { grid-area: red-panda}
+.raccoon { grid-area: raccoon;}
+.zebra { grid-area: zebra;}
+.fox { grid-area: fox;}
+.lion { grid-area: lion;}
+.tiger { grid-area: tiger;}

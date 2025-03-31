@@ -1,0 +1,126 @@
+/* AUTHOR: @WALSHYAW */
+/* DATE: 03/31/2025 */
+/* ROADMAP PROJECT: FRONTEND: TOOLTIP UI */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 50vw;
+    background-color: white;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.tooltip-container {
+    display: flex;
+    height: 35vh; 
+    width: 90%;
+    border-style: solid; border-radius: 20px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.tooltip-text-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%; height: 100%;
+    padding-right: 32px;
+}
+
+.tooltip-text {
+    font-size: 1.5vw;
+    width: 90%;
+    text-align: center;
+    padding-bottom: 140px;
+}
+
+.tooltip-arrow {
+    height: 0; width: 0;
+    position: absolute;
+    font-size: 5vw;
+    top: 137px; right: 140px;
+}
+
+.navbar-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 60%;
+}
+
+.home-container, .projects-container, .blog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 33%; height: 100%;
+    padding-top: 5vh;
+}
+
+.home-text, .project-text, .blog-text {
+    position: absolute;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: clamp(14px, 2vw, 28px);
+    top: 34%;
+    padding-top: 8px; padding-bottom: 8px;
+    border-radius: 12px;
+    opacity: 0;
+}
+
+.home-text { width: 345px; }
+.project-text { width: 275px; }
+.blog-text { width: 230px; }
+
+.bottom-triangle {
+    position: absolute;
+    top: 45%;
+    border-top: 20px solid black;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    opacity: 0;
+}
+
+.home-button, .project-button, .blog-button {
+    font-size: 38px;
+}
+
+.home-button:hover ~ .home-text, 
+.home-button:hover ~ .bottom-triangle,
+.project-button:hover ~ .project-text, 
+.project-button:hover ~ .bottom-triangle,
+.blog-button:hover ~ .blog-text, 
+.blog-button:hover ~ .bottom-triangle {
+    animation: fadeIn 0.4s;
+    opacity: 1;
+}
+
+.home-button:hover, .project-button:hover, .blog-button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
